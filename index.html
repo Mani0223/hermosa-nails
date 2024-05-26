@@ -244,37 +244,38 @@
             <div class="form-background">
               <div class="form-container">
                 <form name="appointment" method="POST" action="/" data-netlify="true">
-                  <div class="mb-3">
-                    <label for="fullName" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="fullName" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="emailAddress" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="emailAddress" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phoneNumber" required>
-                  </div>
-                  <div class="mb-3">
-                    <label for="services" class="form-label">Services</label>
-                    <select class="form-select" id="services" required>
-                      <option value="" selected disabled>Select a service</option>
-                      <option value="manicure">Manicure ($35)</option>
-                      <option value="dry">Dry Pedicure ($20)</option>
-                      <option value="basic">Basic Pedicure ($30)</option>
-                      <option value="extra">Extra Pedicure ($40)</option>
-                      <option value="gel">Gel X ($45)</option>
-                    </select>
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </div>
-                </form>
+    <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" name="fullName" required>
+    </div>
+    <div class="mb-3">
+        <label for="emailAddress" class="form-label">Email Address</label>
+        <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+    </div>
+    <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" required>
+    </div>
+    <div class="mb-3">
+        <label for="services" class="form-label">Services</label>
+        <select class="form-select" id="services" name="services" required>
+            <option value="" selected disabled>Select a service</option>
+            <option value="manicure">Manicure ($35)</option>
+            <option value="dry">Dry Pedicure ($20)</option>
+            <option value="basic">Basic Pedicure ($30)</option>
+            <option value="extra">Extra Pedicure ($40)</option>
+            <option value="gel">Gel X ($45)</option>
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
               </div>
             </div>
           </div>
